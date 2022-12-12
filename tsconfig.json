@@ -10,5 +10,4 @@
     "declaration": true,
     "moduleResolution": "Node"
   },
-  "include": ["src"]
 }

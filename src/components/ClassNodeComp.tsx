@@ -27,7 +27,7 @@ import { classNodeSchema } from '../type/zodClassNodeComp.zod'
 import { FunctionsFormFields, VarsFormFields } from './FormField'
 import { SubmitHandler } from 'react-hook-form'
 
-const ClassNodeComp: FC<NodeProps<ClassNodeData>> = (props) => {
+const ClassNodeComponent: FC<NodeProps<ClassNodeData>> = (props) => {
   const data = props
   const { getNodes, setNodes, setEdges } = useReactFlow()
 
@@ -121,7 +121,9 @@ const ClassNodeComp: FC<NodeProps<ClassNodeData>> = (props) => {
   )
 }
 
-export default memo(ClassNodeComp)
+const ClassNodeComp = memo(ClassNodeComponent)
+
+export default ClassNodeComp
 
 /**
  * 
